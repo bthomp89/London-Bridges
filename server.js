@@ -1,5 +1,4 @@
 const express = require("express");
-
 const app = express();
 
 // parse requests of content-type - application/json
