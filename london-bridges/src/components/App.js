@@ -1,7 +1,12 @@
+
+
+import History from "./History/History";
+
+
 function App() {
   return (
     <div>
-      <h1>LONDON BRIDGES</h1>
+<History></History>
     </div>
   );
 }
