@@ -4,7 +4,7 @@ function Event() {
   return (
     <div id="background" class="flex">
       <div id="flex-child">
-        <img src="image 7.png" width="527" height="507" class="center"></img>
+        <img src="image 7.png" width="500" height="475" class="center"></img>
       </div>
       <div id="event">
         <p class="event-title">Event name</p>

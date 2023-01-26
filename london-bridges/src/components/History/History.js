@@ -1,4 +1,5 @@
 import "./History.css";
+import Event from "../Event/Event"
 
 function History() {
   return (
@@ -31,18 +32,25 @@ function History() {
 {/* Past Events */}
 <div className="pastEvents">
 
-<span style={{ fontSize: "45px", fontFamily: "Sans-serif", color:"#412079", fontWeight:"700", marginLeft:"325px"}}>
+<span style={{ fontSize: "45px", fontFamily: "Sans-serif", color:"#412079", fontWeight:"700", marginLeft:"125px"}}>
           PAST EVENTS
         </span>
 
 
-
-
-
-
+<br/>
+<div className="event">
+<Event></Event>
+</div>
+<div className="event">
+<Event></Event>
+</div>
+<div className="event">
+<Event></Event>
 </div>
 
+</div>
   </div>
+  
   );
 }
 
