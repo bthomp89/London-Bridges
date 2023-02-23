@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  height: 100%;
+  width: 100%;
+}
+#container {
+  margin: 0 auto;
+  border: 0 none;
+  height: 1287px;
+  width: 100%;
+  position: relative;
+}
+.height80 {
+  padding-top: 80px;
+}
+.header {
+  height: 33%;
+  border: 0;
+  text-align: center;
+  background: #f4ebff;
+  color: black;
+}
+.headerMsg {
+  font-size: 45px;
+  border-radius: 15%;
+  padding-bottom: 80px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #412079;
+}
+.headerBtn {
+  background-color: #ebdbff;
+  outline: none;
+  border-radius: 5px;
+  border-width: 1px;
+  cursor: pointer;
+  height: 37px;
+  width: 150px;
+  font-size: 23px;
+}
+.upNext {
+  position: relative;
+  height: 33%;
+  background: white;
+  z-index: 1;
+}
+.upNextHead {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+  color: #412079;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 15px;
+}
+.upNextPhoto {
+  position: absolute;
+  top: 39%;
+  width: 405px;
+  height: 285px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  z-index: 3;
+}
+#eventInfo {
+  top: 18%;
+  background: #f4ebff;
+  border: 0;
+  width: 100%;
+  z-index: 2;
+  font-family: "Inter", sans-serif;
+}
+.eventName {
+  padding-left: 35%;
+  font-size: 25px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+.eventDate {
+  padding-right: 1%;
+  padding-left: 35%;
+  font-size: 20px;
+  margin: 0;
+}
+.eventCost {
+  padding-right: 1%;
+  padding-left: 35%;
+  font-size: 20px;
+  margin: 0;
+}
+.eventAbout {
+  padding-right: 1%;
+  padding-left: 35%;
+  font-size: 20px;
+  margin: 0;
+}
+.eventAboutInfo {
+  padding-right: 1%;
+  padding-left: 35%;
+  font-size: 20px;
+  margin-top: 0;
+}
+.eventRegLink {
+  padding-right: 1%;
+  padding-left: 35%;
+  font-size: 20px;
+  color: black;
+}
+.clickHereMessage {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.eventsLink {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.ourPartners {
+  height: 23%;
+  background: white;
+}
+.footer {
+  height: 11%;
+  background: white;
+}
+.partners {
+  font-size: 25px;
+  text-align: center;
+}
+.partnersHeader {
+  padding-top: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.contact {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.contactHead {
+  font-family: "Inter", sans-serif;
+}
+.breakLine {
+  flex: 1;
+  background-color: #412079;
+  height: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.brPadding {
+  padding-top: 7%;
+}
+.wrap-grid {
+  padding-bottom: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* equal items */
+}
+.socials-grid {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
