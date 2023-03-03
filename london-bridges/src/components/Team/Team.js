@@ -14,13 +14,13 @@ export default function Team() {
                     <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/JaidynBoyd.jpg"} className="PictureOne" />
                     <h1 className="caption">Jaidyn Boyd</h1>
                     <h3 className ="role"> President</h3>
-                    <p className ="desc">Third Year Science <br></br>Major in Chemistry</p>
+                    <p className ="desc">Third Year Science - Major in Chemistry</p>
                 </div>
                 <div className="column">
                     <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/SydneyBury.jpg"} className="PictureTwo" />
                     <h1 className="caption">Sydney Bury</h1>
                     <h3 className ="role">Vice President of Communications</h3>
-                    <p className ="desc">Fourth Year Health Science <br></br>Honours and Specialization in Health and Aging</p>
+                    <p className ="desc">Fourth Year Health Science - Honours and Specialization in Health and Aging</p>
                 </div>
                 <div className="column">
                     <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/ColtonUndseth.jpg"} className="PictureThree" />
