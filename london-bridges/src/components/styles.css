@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap');
+
+@media(max-width: 768px) {
+    .navbar > .hamburger {
+        display: block !important;
+        height: 36px;
+        aspect-ratio: 1;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        background-image: url("../../../london-bridges/public/hamburger.png");
+        background-size: contain;
+        margin: 12px;
+        transition: 0.5s ease;
+    }
+    .navbar > .hamburger.active {
+        background-image: url("../../../london-bridges/public/xIcon.png");
+    }
+
+    .links-container {
+        width: 75vw !important;
+        height: 100vh;
+        background: rgba(0, 0, 0, .75);
+        position: absolute;
+        transition: 1s ease;
+        top: 0;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100vh 0;
+        margin: -100vh 0;
+    }
+    .links-container:not(.active) {
+        opacity: 0;
+        left: -100%;
+    }
+    .links-container.active {
+        opacity: 100%;
+        left: 0;
+    }
+    .links-container a {
+        color: white !important;
+        display: block !important;
+    }
+
+}
+
+.navbar > .hamburger {
+    display: none;
+}
+
+.navbar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar);
+    align-items: center;
+}
+.navbar > nav {
+    display: flex;
+    width: 75%;
+    max-width: 850px;
+    justify-content: space-around;
+}
+.navbar > nav > a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Inter';
+    color: var(--black-text);
+
+}
+.navbar > nav > a.active {
+    color: var(--purple-text);
+
+}
+.navbar .logo {
+    height: 100%;
+    aspect-ratio: 223 / 96;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../london-bridges/public/logo.png");
+}
+
+body {
+    --navbar: #EBDBFF;
+    --light-purple: #F4EBFF;
+    --purple-text: #6D4B98;
+    --dark-purple-words: #412079;
+    --purple-lines: #412079;
+    --highlighted-text: #714AA0;
+    --black-text: #000000;
+}
+
+#root {
+    padding-top: 64px;
+}
