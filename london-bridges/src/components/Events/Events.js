@@ -1,0 +1,28 @@
+import "./Events.css";
+import Event from "../Event/Event"
+
+function Events() {
+  return (
+    //Main Page Div
+  <div className="historyPage">
+
+
+    {/* Past Events */}
+    <div className="pastEvents">
+        <span>Upcoming Events</span>
+
+        <div className="event">
+            <Event></Event>
+        </div>
+        <div className="event">
+            <Event></Event>
+        </div>
+        <div className="event">
+            <Event></Event>
+        </div>
+    </div>
+  </div>
+  );
+}
+
+export default Events;

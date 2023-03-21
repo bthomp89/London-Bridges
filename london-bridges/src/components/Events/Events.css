@@ -36,8 +36,9 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 64px;
     color: #412079;
-    margin: 0;
     padding: 53px;
+    margin: auto !important;
+    display: flex;
 }
 .event{
     padding-top: 90px;
