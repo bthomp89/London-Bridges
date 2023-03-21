@@ -1,11 +1,16 @@
 import "./Event.css";
 
+let onLoad = (e) => {
+    const backgroundImg = e.target;
+
+    backgroundImg.parentNode.style.backgroundImage = `url(${backgroundImg.src})`;
+    console.log(backgroundImg.parentNode);
+}
+
 function Event() {
   return (
     <div id="background" class="flex">
-      <div id="flex-child">
-        <img src="image 7.png" width="500" height="475" class="center"></img>
-      </div>
+      <img src="image 7.png" id="background-img" onLoad={(e) => {onLoad(e)}}></img>
       <div id="event">
         <p class="event-title">Event name</p>
         <p>Date</p>

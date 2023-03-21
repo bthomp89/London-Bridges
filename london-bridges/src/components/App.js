@@ -1,6 +1,7 @@
 import History from "./History/History";
 import Home from "./Home/Home";
 import Team from "./Team/Team";
+import Events from "./Events/Events";
 import "./styles.css";
 
 import React, { useState } from "react";
@@ -37,6 +38,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/history" element={<History />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
       </Router>
     </div>

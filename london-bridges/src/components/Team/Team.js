@@ -9,7 +9,7 @@ export default function Team() {
                 <h1 className="Title">Our Team</h1>
                 <h3 className="Meet">Meet the London Bridges Exec Team!</h3>
             </div>
-            <div className="container">
+            <div className="teamInfo">
                 <div className="column">
                     <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/JaidynBoyd.jpg"} className="PictureOne" />
                     <h1 className="caption">Jaidyn Boyd</h1>

@@ -6,10 +6,7 @@ function History() {
     //Main Page Div
   <div className="historyPage">
 
-  <div className="breakLine"></div>
-
-    {/* Intro Text */}
-      <div className="container">
+      <div className="main">
         <div>
         <span style={{ fontSize: "45px", fontFamily: "Playfair Display", color:"#412079", fontWeight:"700" }}>
           OUR GOAL <br></br>
@@ -26,31 +23,22 @@ function History() {
       </div>
     </div>
 
-    <div className="breakLine"></div>
 
+    {/* Past Events */}
+    <div className="pastEvents">
+        <span>PAST EVENTS</span>
 
-{/* Past Events */}
-<div className="pastEvents">
-
-<span style={{ fontSize: "45px", fontFamily: "Sans-serif", color:"#412079", fontWeight:"700", marginLeft:"125px"}}>
-          PAST EVENTS
-        </span>
-
-
-<br/>
-<div className="event">
-<Event></Event>
-</div>
-<div className="event">
-<Event></Event>
-</div>
-<div className="event">
-<Event></Event>
-</div>
-
-</div>
+        <div className="event">
+            <Event></Event>
+        </div>
+        <div className="event">
+            <Event></Event>
+        </div>
+        <div className="event">
+            <Event></Event>
+        </div>
+    </div>
   </div>
-  
   );
 }
 
