@@ -10,7 +10,6 @@ import mail from "../images/mail.png";
 function Home() {
   return (
     <div id="container">
-
       <div class="header">
         <h1 class="headerMsg">Welcome to London Bridges!</h1>
         <a href="http://google.ca/">Get Involved</a>
@@ -19,11 +18,13 @@ function Home() {
       <div id="upNext">
         <h1 class="upNextHead">UP NEXT</h1>
         <Event></Event>
-        <span>Click <a href="http://google.ca/">here</a> to view more of our past and upcoming events!</span>
+        <span>
+          Click <a href="http://google.ca/">here</a> to view more of our past
+          and upcoming events!
+        </span>
       </div>
 
       <div class="ourPartners">
-
         <div className="partners">
           <h1 class="partnersHeader">Our Partners</h1>
         </div>
@@ -39,7 +40,6 @@ function Home() {
             <img src={ymca} alt="YMCA of Western Ontario" />
           </a>
         </div>
-
       </div>
 
       <div class="footer">
@@ -47,17 +47,17 @@ function Home() {
           <div className="contact">
             <h1 class="contactHead">Contact</h1>
           </div>
-            <div class="links">
-                <a href="https://www.phsscommunity.com">
-                    <img src={insta} alt="Visit our Instagram" />
-                </a>
-                <a href="https://investinginchildren.on.ca">
-                    <img src={mail} alt="Email Us" />
-                </a>
-                <a href="https://www.ymcaswo.ca/#no-back">
-                    <img src={twitter} alt="Visit our Twitter" />
-                </a>
-            </div>
+          <div class="links">
+            <a href="https://www.phsscommunity.com">
+              <img src={insta} alt="Visit our Instagram" />
+            </a>
+            <a href="https://investinginchildren.on.ca">
+              <img src={mail} alt="Email Us" />
+            </a>
+            <a href="https://www.ymcaswo.ca/#no-back">
+              <img src={twitter} alt="Visit our Twitter" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
