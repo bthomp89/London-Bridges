@@ -12,8 +12,34 @@ function Home() {
     <div id="container">
 
       <div class="header">
-        <h1 class="headerMsg">Welcome to London Bridges!</h1>
-        <a href="http://google.ca/">Get Involved</a>
+
+          <div className="header-content">
+              <span class="title">Welcome to London Bridges</span>
+              <div className="divider"></div>
+              <span class="body">Connecting the Western student body to the greater London community by giving students the opportunity to volunteer and fundraise for local charitable organizations in need of greater support.</span>
+              <button>Meet the Team</button>
+          </div>
+
+          <div class="background">
+              <div class="back_main">
+                  <div class="back_top">
+                      <div className="back_top_1"></div>
+                      <div className="back_top_2"></div>
+                  </div>
+                  <div className="back_bottom">
+                      <div className="back_bottom_1"></div>
+                      <div className="back_bottom_2"></div>
+                  </div>
+              </div>
+              <div className="random_shapes">
+                  <div className="box"></div>
+                  <div className="circle"></div>
+                  <div className="dot"></div>
+                  <div className="triangle"></div>
+              </div>
+              <div className="hands"></div>
+          </div>
+
       </div>
 
       <div id="upNext">
@@ -63,5 +89,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

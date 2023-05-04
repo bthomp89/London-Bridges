@@ -95,6 +95,7 @@ body {
     --purple-lines: #412079;
     --highlighted-text: #714AA0;
     --black-text: #000000;
+    --light-grey: #FAFAFF;
 }
 
 #root {
@@ -108,8 +109,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent; /* Set the background color of the scrollbar track */
-    border-radius: 50%;
+    background-color: var(--navbar); /* Set the background color of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {

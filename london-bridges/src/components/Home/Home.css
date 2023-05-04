@@ -16,37 +16,215 @@ body {
   overflow-x: hidden;
   max-width: 100%;
 }
+
+@media (max-width: 768px)  {
+  .header {
+    height: 600px !important;
+  }
+
+  .background {
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  .header .background .hands {
+    background: url('/public/happy-people.png') no-repeat !important;
+    background-size: contain !important;
+    height: 50% !important;
+    right: 0 !important;
+  }
+
+  .back_main, .random_shapes {
+    display: none;
+  }
+
+  .header-content .title {
+    color: #412079;
+    font-size: 1.5rem !important;
+  }
+  .header-content .body {
+    color: black;
+    font-size: 1rem !important;
+  }
+  .header-content button {
+    display: none;
+  }
+}
+
 .header {
-  height: 33%;
   border: 0;
   text-align: center;
-  background: var(--light-purple);
+  background: var(--light-grey);
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
-.headerMsg {
-  font-size: 45px;
-  border-radius: 15%;
-  font-family: "Bebas Neue", sans-serif;
-  color: var(--purple-lines);
-  margin-top: 0;
-  margin-bottom: 0;
+
+.header .background {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1904 / 993;
 }
-.header a {
-  text-decoration: none;
-  background-color: var(--navbar);
-  color: black;
+.header .background .back_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/public/homepage-background/back_main.svg') no-repeat;
+  background-size: contain;
+}
+.header .background .back_main .back_top {
+
+}
+.header .background .back_main .back_top .back_top_1 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: url('/public/homepage-background/top_1.svg') no-repeat;
+  background-size: contain;
+}
+.header .background .back_main .back_top .back_top_2 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: url('/public/homepage-background/top_2.svg') no-repeat;
+  background-size: contain;
+}
+.header .background .back_main .back_bottom {
+
+}
+.header .background .back_main .back_bottom .back_bottom_1 {
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: url('/public/homepage-background/bottom_1.svg') no-repeat;
+  background-size: contain;
+}
+.header .background .back_main .back_bottom .back_bottom_2 {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: url('/public/homepage-background/bottom_2.svg') no-repeat;
+  background-size: contain;
+}
+.header .background .hands {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  height: 33%;
+  aspect-ratio: 1 / 1;
+  background: url('/public/hands.png') no-repeat;
+  background-size: contain;
+}
+
+.header-content {
+  z-index: 99;
+  position: absolute;
+  color: white;
+  left: 7.5%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Inter';
+  gap: 18px;
+}
+.header-content .title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.header-content .body {
+  font-size: 1.2em;
+}
+.header-content button {
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
   outline: none;
-  border-radius: 5px;
-  border-width: 1px;
-  border: 1px solid black;
-  padding: 8px 12px;
+  border: none;
+  font-size: 1.2em;
   cursor: pointer;
-  font-size: 23px;
 }
+.header-content .divider {
+  width: 65px;
+  height: 0px;
+  border: 1px solid #BCA6E0;
+  border-radius: 25px;
+}
+
+.random_shapes {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 45%;
+}
+.random_shapes div {
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: bottom right;
+  animation-name: floatingshape;
+  animation-duration: 25s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.random_shapes .box {
+  margin-left: 110%;
+  margin-top: 30%;
+  animation-delay: 5s;
+  background-image: url('/public/shapes/box.svg');
+}
+.random_shapes .circle {
+  margin-left: 10%;
+  margin-top: 15%;
+  animation-delay: 10s;
+  background-image: url('/public/shapes/circle.svg');
+}
+.random_shapes .dot {
+  margin-left: 50%;
+  margin-top: 23%;
+  width: 12px;
+  height: 12px;
+  animation-delay: 15s;
+  background-image: url('/public/shapes/dot.svg');
+}
+.random_shapes .triangle {
+  margin-left: 85%;
+  margin-top: 80%;
+  background-image: url('/public/shapes/triangle.svg');
+}
+@keyframes floatingshape {
+  0% {
+    transform: translateX(-10px) translateY(10px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-10px) translateY(-10px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(-10px) translateY(10px) rotate(20deg);
+  }
+  75% {
+    transform: translateX(10px) translateY(10px) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-10px) translateY(10px) rotate(0deg);
+  }
+}
+
 #upNext {
   position: relative;
   background: white;
