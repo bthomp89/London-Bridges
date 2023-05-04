@@ -51,6 +51,7 @@ body {
 }
 
 .header {
+  max-height: 50vw;
   border: 0;
   text-align: center;
   background: var(--light-grey);
@@ -128,10 +129,11 @@ body {
 }
 
 .header-content {
+  max-width: calc(643px - 25px);
   z-index: 99;
   position: absolute;
   color: white;
-  left: 7.5%;
+  left: 25px;
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -169,6 +171,7 @@ body {
   position: absolute;
   height: 100%;
   width: 45%;
+  max-width: 600px;
 }
 .random_shapes div {
   height: 24px;
