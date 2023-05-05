@@ -7,10 +7,20 @@ import "./styles.css";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-
 function isActive(page) {
     if (window.location.href.includes(page)) return true;
 }
+
+function checkScroll() {
+    console.log('test');
+    const element = document.querySelector('.navbar');
+    if (window.pageYOffset === 0) {
+        element.classList.remove('scrolled');
+    } else {
+        element.classList.add('scrolled');
+    }
+}
+window.addEventListener('scroll', checkScroll);
 
 function App() {
     const [open, setOpen] = useState(false);

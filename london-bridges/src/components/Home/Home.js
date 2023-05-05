@@ -51,15 +51,15 @@ function Home() {
         </div>
 
         <div class="wrap-grid">
-          <a href="https://www.phsscommunity.com">
-            <img src={phss} alt="Participation House Support Services" />
-          </a>
-          <a href="https://investinginchildren.on.ca">
-            <img src={invinchild} alt="Investing in Children" />
-          </a>
-          <a href="https://www.ymcaswo.ca/#no-back">
-            <img src={ymca} alt="YMCA of Western Ontario" />
-          </a>
+            <a href="https://www.phsscommunity.com">
+                <img src={phss} alt="Participation House Support Services" />
+            </a>
+            <a href="https://www.ymcaswo.ca/#no-back">
+                <img src={ymca} alt="YMCA of Western Ontario" />
+            </a>
+            <a href="https://investinginchildren.on.ca">
+                <img src={invinchild} alt="Investing in Children" />
+            </a>
         </div>
 
       </div>

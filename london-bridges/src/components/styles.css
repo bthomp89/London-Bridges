@@ -16,6 +16,15 @@
         margin: 12px 40px;
         transition: 0.5s ease;
     }
+    .navbar > .logo {
+        filter: invert(100%);
+    }
+    .navbar.scrolled > .logo {
+        filter: none;
+    }
+    .navbar.scrolled > .hamburger {
+        filter: invert(100%);
+    }
     .navbar > .hamburger.active {
         background-image: url("../../../london-bridges/public/xIcon.png");
     }
@@ -53,8 +62,19 @@
     display: none;
 }
 
+.navbar.scrolled {
+    background-color: rgba(65, 32, 121, 0.9) !important;
+}
+.navbar.scrolled > nav > a {
+    color: var(--light-purple) !important;
+}
+.navbar.scrolled > nav > a.active {
+    color: white !important;
+}
+
 .navbar {
-    z-index: 999;
+    transition: 1s ease;
+    z-index: 9;
     position: fixed;
     top: 0;
     width: 100%;
@@ -71,6 +91,7 @@
     gap: 4vw;
 }
 .navbar > nav > a {
+    transition: 0.75s ease 0.25s;
     text-decoration: none;
     font-size: 1rem;
     font-family: 'Inter';
@@ -79,7 +100,6 @@
 }
 .navbar > nav > a.active {
     color: var(--purple-text);
-
 }
 .navbar .logo {
     height: 100%;
