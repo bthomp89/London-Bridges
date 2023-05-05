@@ -18,19 +18,36 @@ body {
 }
 
 @media (max-width: 768px)  {
+
   .header {
-    height: 600px !important;
+    padding: 10vh 0;
+    flex-direction: row !important;
+    justify-content: space-between;
+    gap: 20px;
+    max-height: none !important;
+  }
+  .header-content {
+    position: relative !important;
+    width: auto !important;
+    max-width: 60% !important;
   }
 
   .background {
-    aspect-ratio: 4 / 3 !important;
+    width: 30% !important;
+    height: 100% !important;
+    aspect-ratio: 0 !important;
+    margin: auto;
   }
 
   .header .background .hands {
     background: url('/public/happy-people.png') no-repeat !important;
     background-size: contain !important;
-    height: 50% !important;
+    height: 100% !important;
+    position: relative !important;
     right: 0 !important;
+    bottom: 0 !important;
+    background-position: center;
+    margin: auto;
   }
 
   .back_main, .random_shapes {
@@ -48,6 +65,14 @@ body {
   .header-content button {
     display: none;
   }
+}
+
+.events {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5vw;
+  margin-bottom: 5vw;
 }
 
 .header {
@@ -159,7 +184,7 @@ body {
   font-size: 1.2em;
   cursor: pointer;
 }
-.header-content .divider {
+.divider {
   width: 65px;
   height: 0px;
   border: 1px solid #BCA6E0;
@@ -228,23 +253,35 @@ body {
   }
 }
 
-#upNext {
+#getInvolved {
   position: relative;
   background: white;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--purple-lines);
-  border-bottom: 1px solid var(--purple-lines);
+  align-items: center;
 }
 
-.upNextHead {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 64px;
-  color: #412079;
+#getInvolved .title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 48px;
+  color: black;
   margin: 0;
   padding: 53px;
+  text-align: center;
+  font-weight: normal;
+
 }
+#getInvolved .title b {
+  color: #412079;
+}
+#getInvolved .tail {
+  font-family: 'Roboto';
+  color: #412079;
+  text-align: center;
+  font-size: 24px;
+}
+
 .upNextPhoto {
   position: absolute;
   top: 39%;
@@ -324,6 +361,8 @@ body {
 .ourPartners {
   background: white;
   padding: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer {
   background: white;
@@ -331,12 +370,18 @@ body {
 .partners {
   font-size: 3rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .partnersHeader {
-  padding-top: 25px;
   font-family: "Inter", sans-serif;
-  font-size: 35px;
+  font-size: 1.5rem;
   text-align: center;
+}
+.ourPartners .divider {
+  width: 45px !important;
+  border: 2px solid #412079;
 }
 .contact {
   font-family: "Inter", sans-serif;
@@ -350,12 +395,12 @@ body {
 }
 .wrap-grid {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   gap: 24px;
 }
 .wrap-grid img {
-  max-width: 20vw;
+  max-width: 15vw;
   height: auto;
   aspect-ratio: 0 !important;
   box-shadow: none;
@@ -369,24 +414,24 @@ body {
     text-align: center;
   }
 }
+
+.footer {
+  margin-top: 5vh;
+}
 .socials-grid {
   display: flex;
   justify-content: end;
   align-items: center;
 }
 .socials-grid img {
-  max-width: none;
-  height: 48px;
-  width: 48px;
   border-radius: 0;
   box-shadow: none;
-  margin: auto 12px;
+  transform: scale(0.5);
 }
 .socials-grid .links {
-  height: 64px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 .socials-grid a {
   height: 100%;

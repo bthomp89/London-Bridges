@@ -1,76 +1,36 @@
-@media (max-width: 768px) {
-    #background {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        backdrop-filter: blur(4px);
-        padding: 24px;
-    }
-    #background::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: inherit;
-        filter: blur(10px) opacity(75%) brightness(10%);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        z-index: -1;
-    }
-    #background img {
-        display: none;
-    }
-    #background #event {
-        width: 100%;
-        max-width: 100%;
-        color: var(--light-purple);
-    }
-    #background #event p {
-        text-align: center !important;
-        margin: 0 auto;
-    }
+#background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25vw;
+    text-align: center;
 }
 
-@media (min-width: 769px) {
-    #background{
-        background: linear-gradient(to bottom, rgba(128,0,128,0) 10%, var(--light-purple) 0, var(--light-purple) calc(100% - 24px), rgba(128,0,128,0) 10%) !important;
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-    }
-}
-
-img {
-    max-width: 30vw;
-    height: 100%;
+#background img {
+    max-width: 15vw;
     aspect-ratio: 1;
     margin: auto 0;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 18px;
+    background-repeat: no-repeat;
+    border: 12px solid #F2F2F2;
 }
 #event{
-    margin: 48px 0;
-    max-width: 50vw;
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 12px;
     justify-content: center;
     font-family: 'Inter';
+    color: #2B3377;
+    margin-top: 12px;
 }
 .event-title{
     font-weight: bold;
+    font-size: 1.3rem;
 }
 p{
     margin-top: 4px;
     margin-bottom: 4px;
+    font-size: 1rem;
 }

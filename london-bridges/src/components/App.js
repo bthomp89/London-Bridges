@@ -24,10 +24,9 @@ function App() {
         <div class="navbar">
             <div class="logo"></div>
             <nav className={`links-container ${open && "active"}`}>
-                <a href="/home" className={isActive('home') ? 'active' : ''} onClick={toggleMobileNav}>HOME</a>
-                <a href="/history" className={isActive('history') ? 'active' : ''} onClick={toggleMobileNav}>HISTORY</a>
-                <a href="/team" className={isActive('team') ? 'active' : ''} onClick={toggleMobileNav}>OUR TEAM</a>
-                <a href="/events" className={isActive('events') ? 'active' : ''} onClick={toggleMobileNav}>EVENTS</a>
+                <a href="/home" className={isActive('home') ? 'active' : ''} onClick={toggleMobileNav}>Home</a>
+                <a href="/events" className={isActive('events') ? 'active' : ''} onClick={toggleMobileNav}>Events</a>
+                <a href="/team" className={isActive('team') ? 'active' : ''} onClick={toggleMobileNav}>Our Team</a>
             </nav>
             <button className={`hamburger ${open && "active"}`} onClick={toggleMobileNav}></button>
         </div>

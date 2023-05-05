@@ -3,9 +3,10 @@ import Event from "../Event/Event";
 import phss from "../images/phss.png";
 import invinchild from "../images/invinchild.png";
 import ymca from "../images/ymca.png";
-import twitter from "../images/twitter.png";
-import insta from "../images/insta.png";
-import mail from "../images/mail.png";
+import insta from "../images/instagram.svg";
+import linkedin from "../images/linkedin.svg";
+import mail from "../images/email.svg";
+import facebook from "../images/facebook.svg";
 
 function Home() {
   return (
@@ -42,16 +43,11 @@ function Home() {
 
       </div>
 
-      <div id="upNext">
-        <h1 class="upNextHead">UP NEXT</h1>
-        <Event></Event>
-        <span>Click <a href="http://google.ca/">here</a> to view more of our past and upcoming events!</span>
-      </div>
-
       <div class="ourPartners">
 
         <div className="partners">
-          <h1 class="partnersHeader">Our Partners</h1>
+            <div className="divider"></div>
+            <h1 class="partnersHeader">Our Partners</h1>
         </div>
 
         <div class="wrap-grid">
@@ -68,11 +64,18 @@ function Home() {
 
       </div>
 
+        <div id="getInvolved">
+            <h1 className="title">Get <b>Involved</b></h1>
+            <div class="events">
+                <Event></Event>
+                <Event></Event>
+                <Event></Event>
+            </div>
+            <span class="tail">Making a positive difference in the London community.</span>
+        </div>
+
       <div class="footer">
         <div class="socials-grid">
-          <div className="contact">
-            <h1 class="contactHead">Contact</h1>
-          </div>
             <div class="links">
                 <a href="https://www.phsscommunity.com">
                     <img src={insta} alt="Visit our Instagram" />
@@ -81,7 +84,10 @@ function Home() {
                     <img src={mail} alt="Email Us" />
                 </a>
                 <a href="https://www.ymcaswo.ca/#no-back">
-                    <img src={twitter} alt="Visit our Twitter" />
+                    <img src={facebook} alt="Visit our Twitter" />
+                </a>
+                <a href="https://www.ymcaswo.ca/#no-back">
+                    <img src={linkedin} alt="See our Linkedin" />
                 </a>
             </div>
         </div>

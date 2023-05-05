@@ -27,14 +27,9 @@ function History() {
     {/* Past Events */}
     <div className="pastEvents">
         <span>PAST EVENTS</span>
-
-        <div className="event">
+        <div class="events">
             <Event></Event>
-        </div>
-        <div className="event">
             <Event></Event>
-        </div>
-        <div className="event">
             <Event></Event>
         </div>
     </div>

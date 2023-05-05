@@ -11,13 +11,9 @@ function Events() {
     <div className="pastEvents">
         <span>Upcoming Events</span>
 
-        <div className="event">
+        <div className="events">
             <Event></Event>
-        </div>
-        <div className="event">
             <Event></Event>
-        </div>
-        <div className="event">
             <Event></Event>
         </div>
     </div>
