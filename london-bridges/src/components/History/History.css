@@ -1,7 +1,7 @@
 .historyPage {
     margin: 0 auto;
     border: 0 none;
-    height: calc(100vh - 64px);
+    /*height: calc(100vh - 64px);*/
     width: 100%;
     position: relative;
     overflow-x: hidden;

@@ -10,20 +10,20 @@ import facebook from "../images/facebook.svg";
 
 function Home() {
   return (
-    <div id="container">
+    <div className="container">
 
-      <div class="header">
+      <div className="header">
 
           <div className="header-content">
-              <span class="title">Welcome to London Bridges</span>
+              <span className="title">Welcome to London Bridges</span>
               <div className="divider"></div>
-              <span class="body">Connecting the Western student body to the greater London community by giving students the opportunity to volunteer and fundraise for local charitable organizations in need of greater support.</span>
+              <span className="body">Connecting the Western student body to the greater London community by giving students the opportunity to volunteer and fundraise for local charitable organizations in need of greater support.</span>
               <button>Meet the Team</button>
           </div>
 
-          <div class="background">
-              <div class="back_main">
-                  <div class="back_top">
+          <div className="background">
+              <div className="back_main">
+                  <div className="back_top">
                       <div className="back_top_1"></div>
                       <div className="back_top_2"></div>
                   </div>
@@ -43,14 +43,14 @@ function Home() {
 
       </div>
 
-      <div class="ourPartners">
+      <div className="ourPartners">
 
         <div className="partners">
             <div className="divider"></div>
-            <h1 class="partnersHeader">Our Partners</h1>
+            <h1 className="partnersHeader">Our Partners</h1>
         </div>
 
-        <div class="wrap-grid">
+        <div className="wrap-grid">
             <a href="https://www.phsscommunity.com">
                 <img src={phss} alt="Participation House Support Services" />
             </a>
@@ -66,17 +66,17 @@ function Home() {
 
         <div id="getInvolved">
             <h1 className="title">Get <b>Involved</b></h1>
-            <div class="events">
+            <div className="events">
                 <Event></Event>
                 <Event></Event>
                 <Event></Event>
             </div>
-            <span class="tail">Making a positive difference in the London community.</span>
+            <span className="tail">Making a positive difference in the London community.</span>
         </div>
 
-      <div class="footer">
-        <div class="socials-grid">
-            <div class="links">
+      <div className="footer">
+        <div className="socials-grid">
+            <div className="links">
                 <a href="https://www.phsscommunity.com">
                     <img src={insta} alt="Visit our Instagram" />
                 </a>

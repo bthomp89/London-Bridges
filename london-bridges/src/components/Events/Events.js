@@ -4,10 +4,8 @@ import Event from "../Event/Event"
 function Events() {
   return (
     //Main Page Div
-  <div className="historyPage">
+  <div className="container">
 
-
-    {/* Past Events */}
     <div className="pastEvents">
         <span>Upcoming Events</span>
 

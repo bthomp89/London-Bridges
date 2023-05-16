@@ -27,7 +27,7 @@ function History() {
     {/* Past Events */}
     <div className="pastEvents">
         <span>PAST EVENTS</span>
-        <div class="events">
+        <div className="events">
             <Event></Event>
             <Event></Event>
             <Event></Event>

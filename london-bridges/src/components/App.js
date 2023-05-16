@@ -12,7 +12,7 @@ function isActive(page) {
 }
 
 function checkScroll() {
-    console.log('test');
+    // console.log('test', window.pageYOffset);
     const element = document.querySelector('.navbar');
     if (window.pageYOffset === 0) {
         element.classList.remove('scrolled');
@@ -20,7 +20,7 @@ function checkScroll() {
         element.classList.add('scrolled');
     }
 }
-window.addEventListener('scroll', checkScroll);
+window.addEventListener('scroll', checkScroll, true);
 
 function App() {
     const [open, setOpen] = useState(false);
@@ -31,8 +31,8 @@ function App() {
 
   return (
     <div>
-        <div class="navbar">
-            <div class="logo"></div>
+        <div className="navbar">
+            <div className="logo"></div>
             <nav className={`links-container ${open && "active"}`}>
                 <a href="/home" className={isActive('home') ? 'active' : ''} onClick={toggleMobileNav}>Home</a>
                 <a href="/events" className={isActive('events') ? 'active' : ''} onClick={toggleMobileNav}>Events</a>

@@ -2,10 +2,10 @@ import "./Event.css";
 
 function Event() {
   return (
-    <div id="background" class="flex">
+    <div id="background" className="flex">
       <img src="image 7.png" id="background-img"></img>
       <div id="event">
-        <p class="event-title">Event name</p>
+        <p className="event-title">Event name</p>
         <p>Date</p>
         <p>Cost:</p>
         <p>About the event:</p>

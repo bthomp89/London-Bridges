@@ -4,7 +4,7 @@ import "./Team.css";
 
 export default function Team() {
     return (
-        <div className="webpage">
+        <div className="container">
             <div className="Header">
                 <h1 className="Title">Our Team</h1>
                 <h3 className="Meet">Meet the London Bridges Exec Team!</h3>

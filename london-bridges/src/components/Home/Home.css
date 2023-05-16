@@ -7,7 +7,7 @@ body {
   height: 100%;
   width: 100%;
 }
-#container {
+.container {
   margin: 0 auto;
   border: 0 none;
   width: 100%;
