@@ -18,8 +18,10 @@
 }
 
 .container {
-    padding-top: 70px;
     overflow-y: hidden;
+}
+.container.team {
+    padding-top: 70px;
 }
 
 .team-header {
