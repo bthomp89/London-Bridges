@@ -1,44 +1,61 @@
-import React,{Component} from "react";
-
 import "./Team.css";
+import insta from "../images/instagram.svg";
+import mail from "../images/email.svg";
+import facebook from "../images/facebook.svg";
+import linkedin from "../images/linkedin.svg";
 
 export default function Team() {
+
+    const members = [
+        { imgName: "JaidynBoyd.jpg", caption: "Jaidyn Boyd", role: "President", year: "Third", program: "Chemistry" },
+        { imgName: "SydneyBury.jpg", caption: "Sydney Bury", role: "VP Communications", year: "Fourth", program: "Health Science" },
+        { imgName: "ColtonUndseth.jpg", caption: "Colton Undseth", role: "VP Events", year: "Third", program: "Ivey HBA" },
+        { imgName: "ShriyaStenger.jpg", caption: "Shriya Stenger", role: "VP Finance", year: "Third", program: "Ivey HBA" },
+        { imgName: "NathanKerr.jpg", caption: "Nathan Kerr", role: "Director of External Affairs", year: "Second", program: "Consumer behavior and Psychology" }
+    ]
+
     return (
-        <div className="container">
-            <div className="Header">
+        <div className="container team">
+            <div className="team-header">
                 <h1 className="Title">Our Team</h1>
+                <div className="divider"></div>
                 <h3 className="Meet">Meet the London Bridges Exec Team!</h3>
             </div>
             <div className="teamInfo">
-                <div className="column">
-                    <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/JaidynBoyd.jpg"} className="PictureOne" />
-                    <h1 className="caption">Jaidyn Boyd</h1>
-                    <h3 className ="role"> President</h3>
-                    <p className ="desc">Third Year Science - Major in Chemistry</p>
-                </div>
-                <div className="column">
-                    <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/SydneyBury.jpg"} className="PictureTwo" />
-                    <h1 className="caption">Sydney Bury</h1>
-                    <h3 className ="role">Vice President of Communications</h3>
-                    <p className ="desc">Fourth Year Health Science - Honours and Specialization in Health and Aging</p>
-                </div>
-                <div className="column">
-                    <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/ColtonUndseth.jpg"} className="PictureThree" />
-                    <h1 className="caption">Colton Undseth</h1>
-                    <h3 className ="role">Vice President of Events</h3>
-                    <p className ="desc">Third Year Ivey Business</p>
-                </div>
-                <div className="column">
-                    <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/ShriyaStenger.jpg"} className="PictureFour" />
-                    <h1 className="caption">Shriya Stenger</h1>
-                    <h3 className ="role">Vice President of Finance</h3>
-                    <p className ="desc">Third Year Ivey Business</p>
-                </div>
-                <div className="column">
-                    <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/NathanKerr.jpg"} className="PictureFive" />
-                    <h1 className="caption">Nathan Kerr</h1>
-                    <h3 className ="role">Director of External Affairs</h3>
-                    <p className ="desc">Second Year Social Science</p>
+                { members.map( member => <div key={member.role} className="card">
+                    <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/violet-abstract-bg.png"} className="card-img-top"/>
+                    <div>
+                        <div className="inner">
+                            <div className="card-body">
+                                <img src={process.env.PUBLIC_URL + "LondonBridgesTeamPhotos/" + member.imgName}/>
+                                <h1 className="caption">{member.caption}</h1>
+                                <h3 className="role">{member.role}</h3>
+                            </div>
+                            <div className="card-footer">
+                                <p className="year">Year: {member.year}</p>
+                                <p className="program">Program: {member.program}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> )}
+            </div>
+
+            <div className="footer">
+                <div className="socials-grid">
+                    <div className="links">
+                        <a href="https://www.phsscommunity.com">
+                            <img src={insta} alt="Visit our Instagram" />
+                        </a>
+                        <a href="https://investinginchildren.on.ca">
+                            <img src={mail} alt="Email Us" />
+                        </a>
+                        <a href="https://www.ymcaswo.ca/#no-back">
+                            <img src={facebook} alt="Visit our Twitter" />
+                        </a>
+                        <a href="https://www.ymcaswo.ca/#no-back">
+                            <img src={linkedin} alt="See our Linkedin" />
+                        </a>
+                    </div>
                 </div>
             </div>
 
